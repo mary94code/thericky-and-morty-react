@@ -1,4 +1,4 @@
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { Route, HashRouter, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import AllLocations from "./Pages/AllLocations";
 import CharactersPage from "./Pages/CharactersPage";
@@ -11,7 +11,7 @@ import SingleCharacter from "./Pages/SingleCharacter";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/allCharacters" element={<CharactersPage /> }/>
           <Route path="/allLocations" element={<AllLocations />}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   );
