@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/thericky-and-morty-react/static/css/main.13d3b25d.css",
+    "main.js": "/thericky-and-morty-react/static/js/main.779ac778.js",
+    "index.html": "/thericky-and-morty-react/index.html",
+    "main.13d3b25d.css.map": "/thericky-and-morty-react/static/css/main.13d3b25d.css.map",
+    "main.779ac778.js.map": "/thericky-and-morty-react/static/js/main.779ac778.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13d3b25d.css",
+    "static/js/main.779ac778.js"
+  ]
+}
