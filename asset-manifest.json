@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/thericky-and-morty-react/static/css/main.13d3b25d.css",
-    "main.js": "/thericky-and-morty-react/static/js/main.69ac6978.js",
+    "main.js": "/thericky-and-morty-react/static/js/main.f05f0835.js",
     "index.html": "/thericky-and-morty-react/index.html",
     "main.13d3b25d.css.map": "/thericky-and-morty-react/static/css/main.13d3b25d.css.map",
-    "main.69ac6978.js.map": "/thericky-and-morty-react/static/js/main.69ac6978.js.map"
+    "main.f05f0835.js.map": "/thericky-and-morty-react/static/js/main.f05f0835.js.map"
   },
   "entrypoints": [
     "static/css/main.13d3b25d.css",
-    "static/js/main.69ac6978.js"
+    "static/js/main.f05f0835.js"
   ]
 }
