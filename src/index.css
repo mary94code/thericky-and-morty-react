@@ -1,13 +1,313 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+.header {
+  background-color: white;
+  padding: 30px 30px 70px 30px;
+}
+
+.header__link {
+  color: rgb(32, 35, 41);
+  text-decoration: none;
+
+}
+.activeLink {
+  color: rgb(255, 152, 0);
+  border-bottom: 2px solid rgb(255, 152, 0);
+}
+
+h1 {
+  color: rgb(32, 35, 41);
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+img {
+  max-width: 100%;
+}
+
+.starred__in {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 20px;
+}
+
+.main {
+  background-color: rgb(32, 35, 41);
+  color: white;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.main__episodes {
+  background-color: rgb(32, 35, 41);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.episodes__container {
+  background: rgb(60, 62, 68);
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  width: 470px;
+  transition: all 0.3s ease-in-out;
+
+}
+.episodes__container:hover{
+  transform: scale(1.1);
+  
+ }
+
+
+.episode__image {
+  width: 250px;
+  border-radius: 20px 0 0 20px;
+  height: 250px;
+  object-fit: cover;
+  flex: 1 0 250px;
+}
+
+.episode__description {
+  padding: 15px;
+}
+
+.episode__description p,
+.character__description {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.episode__link {
+  color: white;
+  font-size: 18px;
+}
+
+a {
+  color: white;
+  font-size: 25px;
+}
+
+a:hover {
+  color: rgb(255, 152, 0);
+}
+
+/* episode page */
+
+.main__episode {
+  background-color: rgb(32, 35, 41);
+  padding: 70px;
+  text-align: center;
+
+}
+
+.episode__description__episodePage {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.characters__in__episode {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main__episode h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.character__link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* character page */
+.character__main {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.character__main h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.character__main p {
+  font-size: 20px;
+  padding: 2px;
+}
+
+.page__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.page__buttons > *{
+  padding: 10px 20px;
+  margin: 0 10px;
+
+}
+.location__link {
+  color: white;
+  font-size: 20px;
+}
+
+.characters__card {
+  margin-top: 30px;
+  text-align: center;
+  width: 33.3%;
+}
+
+.characters__card h2 {
+  margin-bottom: 10px;
+}
+
+.locations__main {
+  background-color: rgb(32, 35, 41);
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.locations__cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.locations__main h4 {
+  margin-top: 30px;
+  font-size: 25px;
+  
+}
+.all__locations__container{
+  background-color: rgb(32, 35, 41);
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.allLocationsCard{
+  background-color: rgb(60, 62, 68);
+  width: 30%;
+  height: 200px;
+  padding: 10px;
+  text-align: center;
+  margin: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.allLocationsCard:hover{
+ transform: scale(1.05);
+ 
+}
+.locations__header{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+@media (min-width: 250px) and (max-width: 650px){
+li{
+  margin: 10px;
+  text-align: center;
+}
+a{
+  font-size: 18px;
+}
+.episodes__container{
+  flex-direction: column;
+  width: 90%;
+ 
+}
+.episodes__container:hover{
+  transform: none;
+}
+.episode__image{
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.main__episode h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.main__episodes {
+  background-color: rgb(32, 35, 41);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.characters__card{
+  width: 48%;
+  margin: 5px;
+}
+.all__locations__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.allLocationsCard{
+  width: 70%;
+  height: 200px;
+  margin: 5px;
+}
+.allLocationsCard:hover{
+  transform: none;
+}
+}
+@media (min-width: 650px) and (max-width: 931px){
+  .characters__card{
+    margin: 10px;
+  }
+}
+@media (min-width: 250px) and (max-width: 450px){
+  .characters__card{
+    width: 90%;
+  }
+  .allLocationsCard{
+    width: 100%;
+    height: 200px;
+    margin: 5px;
+  }
 }
